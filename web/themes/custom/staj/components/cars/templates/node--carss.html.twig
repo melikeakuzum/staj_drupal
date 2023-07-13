@@ -1,0 +1,44 @@
+{{ attach_library('staj/cars') }}
+
+<article{{ attributes.addClass('node-cars') }}>
+
+  <div{{ content_attributes }}>
+
+    <div class="row">
+    <div class="col-md-4">
+      {{ content.field_carss_pictures }}
+    </div>
+    <div class="col-md-8">
+    
+
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <td>Price</td>
+      <td>{{ content.field_carss_price }}</td>
+    </tr>
+    <tr>
+      <td>Fuel</td>
+      <td>{{ content.field_carss_fuel }}</td>
+    </tr>
+    <tr>
+      <td>KM</td>
+      <td>{{ content.field_carss_km }}</td>
+    </tr>
+    <tr>
+      <td>Model Year</td>
+      <td>{{ content.field_carss_model }}</td>
+    </tr>
+  </tbody>
+</table>
+
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-12">
+      {{ content.body }}
+    </div>
+    </div>
+  </div>
+
+</article>
